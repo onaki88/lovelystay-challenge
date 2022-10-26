@@ -16,5 +16,10 @@
     "noEmit": true,
     "jsx": "react-jsx"
   },
-  "include": ["src/components", "src/style.d.ts", "src/svg.d.ts"]
+  "include": [
+    "src/components",
+    "src/style.d.ts",
+    "src/svg.d.ts",
+    "src/pages/UserInfo.tsx"
+  ]
 }
