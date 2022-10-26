@@ -1,7 +1,7 @@
 import { useParams } from "react-router-dom";
 
 import AppContainer from "../components/Container";
-import UserInfo from "../components/UserInfo";
+import UserInfo from "../sections/UserInfo";
 import RepoList from "../sections/RepoList";
 
 const Profile = () => {

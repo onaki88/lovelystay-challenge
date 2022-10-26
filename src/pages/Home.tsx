@@ -2,7 +2,7 @@ import { useState } from "react";
 import { User } from "../types/user";
 
 import AppContainer from "./../components/Container";
-import Search from "./../components/Search";
+import Search from "../sections/Search";
 import UserList from "./../sections/UserList";
 
 const Home = () => {

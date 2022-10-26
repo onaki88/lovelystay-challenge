@@ -9,13 +9,11 @@ type Props = {
 const RepoCard = ({ repo }: Props) => {
   return (
     <div className={styles.card}>
+      <label>{repo.visibility}</label>
       <a className={styles.card__title} href={repo.html_url}>
         <h3>{repo.name}</h3>
       </a>
-      <ul>
-        <li>{repo.visibility}</li>
-        <li>{repo.description}</li>
-      </ul>
+      <p>{repo.description}</p>
     </div>
   );
 };

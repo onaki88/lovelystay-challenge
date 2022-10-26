@@ -24,6 +24,7 @@ const UserInfo = ({ username }: Props) => {
   useEffect(() => {
     fetchData();
   }, []);
+
   return (
     <section className={styles.info}>
       <h1 className={styles.list__title}>{user?.name}</h1>

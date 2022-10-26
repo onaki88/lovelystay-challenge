@@ -25,6 +25,7 @@ const RepoList = ({ username }: Props) => {
   useEffect(() => {
     fetchData();
   }, []);
+
   return (
     <section className={styles.list}>
       <h3 className={styles.list__title}>Repos list</h3>

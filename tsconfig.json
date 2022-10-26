@@ -20,6 +20,8 @@
     "src/components",
     "src/style.d.ts",
     "src/svg.d.ts",
-    "src/pages/UserInfo.tsx"
+    "src/pages/UserInfo.tsx",
+    "src/sections/UserInfo.tsx",
+    "src/sections/Search.tsx"
   ]
 }
