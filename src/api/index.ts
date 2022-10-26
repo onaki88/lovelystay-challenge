@@ -18,3 +18,9 @@ export const getUserProfile = (
 ): Promise<AxiosResponse<any, any>> => {
   return axiosClient.get(`/users/${username}`);
 };
+
+export const getUserRepos = (
+  username: string
+): Promise<AxiosResponse<any, any>> => {
+  return axiosClient.get(`/users/${username}/repos`);
+};

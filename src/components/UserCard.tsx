@@ -9,7 +9,6 @@ type Props = {
 const UserCard = ({ user }: Props) => {
   return (
     <div className={styles.card}>
-      {user.login}
       <ul>
         <li>{user.login}</li>
         <li>
