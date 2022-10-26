@@ -1,4 +1,5 @@
 import { Repo } from "../types/repo";
+
 import styles from "./repo-card.module.scss";
 
 type Props = {
@@ -8,10 +9,10 @@ type Props = {
 const RepoCard = ({ repo }: Props) => {
   return (
     <div className={styles.card}>
+      <a className={styles.card__title} href={repo.html_url}>
+        <h3>{repo.name}</h3>
+      </a>
       <ul>
-        <li>
-          <a href={repo.html_url}>{repo.name}</a>
-        </li>
         <li>{repo.visibility}</li>
         <li>{repo.description}</li>
       </ul>

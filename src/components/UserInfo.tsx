@@ -1,7 +1,8 @@
-import { User } from "../types/user";
-import styles from "./user-info.module.scss";
 import { useState, useEffect } from "react";
+import { User } from "../types/user";
 import { getUserProfile } from "../api";
+
+import styles from "./user-info.module.scss";
 
 type Props = {
   username: string;
@@ -24,10 +25,10 @@ const UserInfo = ({ username }: Props) => {
     fetchData();
   }, []);
   return (
-    <div className={styles.info}>
+    <section className={styles.info}>
+      <h1 className={styles.list__title}>{user?.name}</h1>
       <img src={user?.avatar_url} alt={user?.name} />
       <ul>
-        <li>{user?.name}</li>
         <li>{user?.location}</li>
         <li>{user?.company}</li>
         <li>{user?.bio}</li>
@@ -37,7 +38,7 @@ const UserInfo = ({ username }: Props) => {
         <li>{user?.followers} followers</li>
         <li>{user?.following} following</li>
       </ul>
-    </div>
+    </section>
   );
 };
 

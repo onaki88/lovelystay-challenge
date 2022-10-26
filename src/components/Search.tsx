@@ -1,7 +1,8 @@
-import styles from "./search.module.scss";
 import { useRef } from "react";
 import { User } from "../types/user";
 import { getUsers } from "../api";
+
+import styles from "./search.module.scss";
 
 type Props = {
   handleResults: (users: User[]) => void;

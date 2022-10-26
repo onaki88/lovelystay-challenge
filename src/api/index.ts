@@ -1,5 +1,5 @@
-import { axiosClient } from "./axiosClient";
 import { AxiosResponse } from "axios";
+import { axiosClient } from "./axiosClient";
 
 export const getUsers = (
   username: string

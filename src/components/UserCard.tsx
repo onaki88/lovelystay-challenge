@@ -1,6 +1,7 @@
-import { User } from "../types/user";
-import styles from "./user-card.module.scss";
 import { Link } from "react-router-dom";
+import { User } from "../types/user";
+
+import styles from "./user-card.module.scss";
 
 type Props = {
   user: User;
@@ -8,16 +9,12 @@ type Props = {
 
 const UserCard = ({ user }: Props) => {
   return (
-    <div className={styles.card}>
-      <ul>
-        <li>{user.login}</li>
-        <li>
-          <Link to={`/users/${user.login}`}>
-            <img src={user.avatar_url} alt={user.login} />
-          </Link>
-        </li>
-      </ul>
-    </div>
+    <article className={styles.card}>
+      <h3 className={styles.card__title}>{user.login}</h3>
+      <Link className={styles.card__avatar} to={`/users/${user.login}`}>
+        <img src={user.avatar_url} alt={user.login} />
+      </Link>
+    </article>
   );
 };
 
